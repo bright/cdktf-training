@@ -4,7 +4,7 @@ This directory contains a script for generating simple, presentation-friendly im
 
 ## Overview
 
-The `generate-image.js` script uses OpenAI's DALL-E model to generate simple, clean images specifically designed for presentation slides.
+The `generate-image.js` script uses OpenAI's DALL-E model to generate simple, clean images with a single focused item, specifically designed for presentation slides.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Before using the script, make sure you have:
 node generate-image.js -p "Your image description" -o "path/to/output.png"
 ```
 
-This will generate a simple, clean image using DALL-E specifically designed for presentation slides.
+This will generate a simple, clean image with a single focused item using DALL-E, specifically designed for presentation slides.
 
 ### Options
 
@@ -36,31 +36,32 @@ This will generate a simple, clean image using DALL-E specifically designed for 
 
 1. Generate a simple, minimal image:
    ```bash
-   node generate-image.js -p "Infrastructure as Code" -o "images/iac.png" --style minimal
+   node generate-image.js -p "Infrastructure as Code" -o "presentation/images/iac.png" --style minimal
    ```
 
 2. Generate a flat-style image:
    ```bash
-   node generate-image.js -p "Cloud infrastructure" -o "images/cloud.png" --style flat
+   node generate-image.js -p "Cloud infrastructure" -o "presentation/images/cloud.png" --style flat
    ```
 
 3. Generate an icon-style image:
    ```bash
-   node generate-image.js -p "Terraform logo" -o "images/terraform.png" --style icon
+   node generate-image.js -p "Terraform logo" -o "presentation/images/terraform.png" --style icon
    ```
 
 ## Creating Images for Presentation Slides
 
-To create simple, clean images for your presentation slides:
+To create simple, clean images with a single focused item for your presentation slides:
 
-1. For each slide, identify the key concept that needs to be illustrated
-2. Create a clear, concise prompt that describes the concept
-3. Run the script with the prompt and desired style
-4. The script will generate and save a presentation-friendly image
+1. For each slide, identify the ONE key concept that needs to be illustrated
+2. Create a clear, concise prompt that describes this single concept
+3. Keep your prompt focused on one main element to ensure clarity
+4. Run the script with the prompt and desired style
+5. The script will generate and save a presentation-friendly image with a single focused item
 
 Example:
 ```bash
-node generate-image.js -p "Benefits of Infrastructure as Code" -o "images/benefits-of-iac.png" --style minimal
+node generate-image.js -p "Benefits of Infrastructure as Code" -o "presentation/images/benefits-of-iac.png" --style minimal
 ```
 
-This will create a simple, clean image that clearly illustrates the concept of "Benefits of Infrastructure as Code" in a minimal style, perfect for presentation slides.
+This will create a simple, clean image with a single focused item that clearly illustrates the concept of "Benefits of Infrastructure as Code" in a minimal style, perfect for presentation slides.

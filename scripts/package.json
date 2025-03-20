@@ -1,0 +1,16 @@
+{
+  "name": "cdktf-tutorial-scripts",
+  "version": "1.0.0",
+  "main": "generate-image.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "latest",
+    "openai": "latest",
+    "dotenv": "latest"
+  }
+}
