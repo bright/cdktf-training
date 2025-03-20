@@ -1,0 +1,34 @@
+# CDKTF generated files
+cdktf.out
+
+# Node.js dependencies
+node_modules/
+
+# TypeScript compiled files
+*.js
+*.js.map
+*.d.ts
+!jest.config.js
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build directories
+dist/
+build/
+
+# Terraform files
+.terraform/
+#terraform.tfstate
+#terraform.tfstate.backup
+
+.env
