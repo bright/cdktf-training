@@ -65,18 +65,18 @@ Each step includes detailed instructions in its own README.md file.
 
 ## Presentation Slide Deck
 
-This repository includes a presentation slide deck (`cdktf-presentation.md`) created with Marp that provides an overview of Infrastructure as Code, Terraform, and CDKTF concepts.
+This repository includes a presentation slide deck (`presentation/cdktf-presentation.md`) created with Marp that provides an overview of Infrastructure as Code, Terraform, and CDKTF concepts.
 
 ### Generating Simple Images for Slides
 
-The repository includes a script for generating simple, clean images specifically designed for presentation slides using OpenAI's DALL-E:
+The repository includes a script for generating simple, clean images with a single focused item, specifically designed for presentation slides using OpenAI's DALL-E:
 
 ```bash
-# Generate a simple image for a presentation slide
-node scripts/generate-image.js -p "Your image description" -o "images/output.png" --style minimal
+# Generate a simple image with a single focused item for a presentation slide
+node scripts/generate-image.js -p "Your image description" -o "presentation/images/output.png" --style minimal
 
-# Generate a flat-style image
-node scripts/generate-image.js -p "Your image description" -o "images/output.png" --style flat
+# Generate a flat-style image with a single focused item
+node scripts/generate-image.js -p "Your image description" -o "presentation/images/output.png" --style flat
 ```
 
 See the [Image Generation Script README](scripts/README.md) for more details and options.
@@ -94,28 +94,28 @@ There are several ways to present the Marp slide deck:
 
 2. Convert the presentation to HTML (for viewing in a browser):
    ```bash
-   npx @marp-team/marp-cli cdktf-presentation.md --output presentation.html
+   npx @marp-team/marp-cli presentation/cdktf-presentation.md --output presentation.html
    ```
 
 3. Convert to PDF:
    ```bash
-   npx @marp-team/marp-cli cdktf-presentation.md --pdf
+   npx @marp-team/marp-cli presentation/cdktf-presentation.md --pdf
    ```
 
 4. Convert to PowerPoint:
    ```bash
-   npx @marp-team/marp-cli cdktf-presentation.md --pptx
+   npx @marp-team/marp-cli presentation/cdktf-presentation.md --pptx
    ```
 
 5. Start a live server for presenting (with hot reload):
    ```bash
-   npx @marp-team/marp-cli -s cdktf-presentation.md
+   npx @marp-team/marp-cli -s presentation/cdktf-presentation.md
    ```
 
 #### Using VS Code with Marp Extension
 
 1. Install the [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) extension
-2. Open `cdktf-presentation.md` in VS Code
+2. Open `presentation/cdktf-presentation.md` in VS Code
 3. Use the "Marp: Export slide deck..." command from the command palette (Ctrl+Shift+P or Cmd+Shift+P)
 4. Choose your preferred export format (HTML, PDF, PPTX)
 5. For presentation mode, click the "Open Preview to the Side" button or use the "Marp: Open preview" command
